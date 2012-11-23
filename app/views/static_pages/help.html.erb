@@ -1,2 +1,16 @@
-<h1>StaticPages#help</h1>
-<p>Find me in app/views/static_pages/help.html.erb</p>
+<% provide(:title, 'Help') %>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tutorial de Ruby On Rails Sample App | <%= yield(:title) %></title>
+	</head>
+	<body>
+		<h1>Help</h1>
+		<p>
+			Obtenga ayuda en el tutorial de Ruby On Rails en help
+			<a href="http://railstutorial.org/help">Página de ayuda de Rails</a>
+			Para ayuda de esta aplicación, visite
+			<a href="http://railstutorial.com/book">Libro del tutorial de Rails</a>
+		</p>
+	</body>
+</html>
